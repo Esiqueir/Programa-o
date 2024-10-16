@@ -26,7 +26,7 @@ void q3()
 void q4()
 {
    int num=0;
-   printf("\nDigite um numero inteiro: ");
+   printf("\nDigite um numero inteiro:");
    scanf("%d", &num);
    printf("O numero digitado foi %d\n", num);
 }
@@ -34,12 +34,12 @@ void q4()
 //5. Faça um programa que leia dois números reais e os imprima.
 void q5()
 {
-   float n1,n2;
+   float num1,num2;
    printf("Informe um numero: ");
-   scanf("%f",&n1);
+   scanf("%f",&num1);
    printf("Informe outro numero: ");
-   scanf("%f",&n2);
-   printf("Os Numeros reais informados foram: %f %f", n1, n2);
+   scanf("%f",&num2);
+   printf("Os Numeros reais informados foram: %f %f", num1, num2);
 }
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
