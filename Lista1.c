@@ -116,6 +116,25 @@ void 10()
 //    subtração,multiplicação e divisão. Ao final, o programa
 //    deve imprimir os resultados dos cálculos.
 
+void 11()
+{
+   float num1,num2,som,sub,div,mult;
+   printf("Digite um numero: ");
+   scanf("%f",&num1);
+   printf("Digite um numero: ");
+   scanf("%d",&num2);
+
+   som=num1+num2;
+   sub=num1-num2;
+   div=num1/num2;
+   mult=num1*num2;  
+
+   printf("\nSoma: %f", som);
+   printf("\nSubtração: %f", sub);
+   printf("\nDivisão: %f", div);
+   printf("\nMultiplicação: %f", mult);
+}
+
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
