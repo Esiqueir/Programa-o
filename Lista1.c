@@ -50,7 +50,7 @@ void q6()
    int num;
    printf("Digite um numero: ");
    scanf("%d",&num);
-   printf("O antecessor:%d e o sucessor %d são:" num-1, num+1);
+   printf("O antecessor:%d e o sucessor %d são:", num-1,"e", num+1);
 }
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
@@ -91,7 +91,7 @@ void q9()
    printf("Digite um numero: ");
    scanf("%d",&num);
    res=num/4;
-   printf("A quarta parte desse número e:%d:" res);
+   printf("A quarta parte desse número e:%d:", res);
 }
 
 //10. Faça um programa que leia três números reais e calcule a
@@ -108,7 +108,7 @@ void 10()
    printf("Digite um numero: ");
    scanf("%d",&num3);
    med = (nun1+num2+num3)/3.0
-   printf("A média aritmética dos números informados é:%f:" med);
+   printf("A média aritmética dos números informados é:%f:", med);
 }
 
 //11. Faça um programa que leia dois números reais e calcule as
@@ -147,7 +147,7 @@ void 12()
    
    res = nun1 * num1
 
-   printf("O quadrado do número informado é:%f:" res);
+   printf("O quadrado do número informado é:%f:", res);
 }
 
 
@@ -169,9 +169,47 @@ void 13()
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
 
+
+void 14()
+{
+   float bs,alt,per,a;
+   printf("Informe o valor (em metros) do comprimento da base para o cálculo: ");
+   scanf("%f",&bs);
+   
+   printf("Informe o valor (em metros) da altura para o cálculo: ");
+   scanf("%f",&alt);
+
+   per=(bs * bs)+(alt * alt);
+
+   a= bs * alt;
+
+   printf("O perímetro é de :%f:", per);
+   printf("A area é de :%f:", a);
+
+}
+
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
+
+void 15()
+{
+   float prec,desc,vdesc,nvprec;
+
+   printf("Informe o valor do produto: ");
+   scanf("%f",&prec);
+   
+   printf("Digite o desconto a ser aplicado na compra do produto: ");
+   scanf("%f",&desc);
+
+  vdesc=prec*(desc/100);
+  nvprec=prec-vdesc;
+  
+   printf("O valor do desconto é de :%f:", vdesc);
+   printf(" O valor do produto com desconto é de :%f:", nvprec);
+
+}
+
 
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
