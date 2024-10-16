@@ -98,6 +98,19 @@ void q9()
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
 
+void 10()
+{
+   float num1,num2,num3,med;
+   printf("Digite um numero: ");
+   scanf("%f",&num1);
+   printf("Digite um numero: ");
+   scanf("%d",&num2);
+   printf("Digite um numero: ");
+   scanf("%d",&num3);
+   med = (nun1+num2+num3)/3.0
+   printf("A média aritmética dos números informados é:%f:" med);
+}
+
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
 //    subtração,multiplicação e divisão. Ao final, o programa
