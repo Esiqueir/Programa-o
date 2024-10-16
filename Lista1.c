@@ -47,10 +47,10 @@ void q5()
 
 void q6()
 {
-   int n;
+   int num;
    printf("Digite um numero: ");
-   scanf("%d",&n);
-   printf("O antecessor:%d e o sucessor %d são:" n-1, n+1);
+   scanf("%d",&num);
+   printf("O antecessor:%d e o sucessor %d são:" num-1, num+1);
 }
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
@@ -74,24 +74,24 @@ end);
 
 void q8()
 {
-   int n1,n2,n3;
+   int num1,num2,res;
    printf("Digite um numero: ");
-   scanf("%d",&n1);
+   scanf("%d",&num1);
    printf("Digite mais um numero: ");
-   scanf("%d",&n2);
-   n3=n1-n2;
-   printf("A subtração desses números é:%d", n3);
+   scanf("%d",&num2);
+   res = num1-num2;
+   printf("A subtração desses números é:%d", res);
 }
 
 //9. Faça um programa que leia um número real e imprima ¼ deste número.
 
 void q9()
 {
-   int n,r;
+   int num,res;
    printf("Digite um numero: ");
-   scanf("%d",&n);
-   r=n/4
-   printf("A quarta parte desse número e:%d:" r1);
+   scanf("%d",&num);
+   res=num/4;
+   printf("A quarta parte desse número e:%d:" res);
 }
 
 //10. Faça um programa que leia três números reais e calcule a
@@ -139,8 +139,32 @@ void 11()
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
 
+void 12()
+{
+   float num1,res;
+   printf("Digite um numero: ");
+   scanf("%f",&num1);
+   
+   res = nun1 * num1
+
+   printf("O quadrado do número informado é:%f:" res);
+}
+
+
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
+
+void 13()
+{
+   float saldo, nvsaldo;
+   printf("Informe o valor do saldo da sua conta para o cálculo: ");
+   scanf("%f",&saldo);
+
+   nvsaldo: saldo * 1.02;
+
+   printf("Seu novo saldo calculado será de :%f:", nvsaldo);
+}
+
 
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
