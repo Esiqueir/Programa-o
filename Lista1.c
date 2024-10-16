@@ -25,24 +25,74 @@ void q3()
 //4. Faça um programa que leia e imprima um número inteiro.
 void q4()
 {
-    int num=0;
-   printf("\nDigite um numero interior: ");
+   int num=0;
+   printf("\nDigite um numero inteiro: ");
    scanf("%d", &num);
    printf("O numero digitado foi %d\n", num);
 }
 
 //5. Faça um programa que leia dois números reais e os imprima.
+void q5()
+{
+   float n1,n2;
+   printf("Informe um numero: ");
+   scanf("%f",&n1);
+   printf("Informe outro numero: ");
+   scanf("%f",&n2);
+   printf("Os Numeros reais informados foram: %f %f", n1, n2);
+}
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 
+void q6()
+{
+   int n;
+   printf("Digite um numero: ");
+   scanf("%d",&n);
+   printf("O antecessor:%d e o sucessor %d são:" n-1, n+1);
+}
+
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+
+void q7()
+{
+   charnome[250],fone[15],end[200]
+   printf("Informe o seu nome completo: ");
+   scanf("%s",&nome);
+   printf("Informe o seu telefone: ");
+   scanf("%s",&fone);
+   printf("Informe o seu Endereço completo: ");
+   scanf("%s",&end);
+   printf("\nDados informados - Nome:%s, Telefone: %s, Enderenco: %s",nome,fone,
+end);
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
 
-//9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+void q8()
+{
+   int n1,n2,n3;
+   printf("Digite um numero: ");
+   scanf("%d",&n1);
+   printf("Digite mais um numero: ");
+   scanf("%d",&n2);
+   n3=n1-n2;
+   printf("A subtração desses números é:%d", n3);
+}
+
+//9. Faça um programa que leia um número real e imprima ¼ deste número.
+
+void q9()
+{
+   int n,r;
+   printf("Digite um numero: ");
+   scanf("%d",&n);
+   r=n/4
+   printf("A quarta parte desse número e:%d:" r1);
+}
 
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
