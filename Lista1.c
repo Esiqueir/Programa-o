@@ -23,6 +23,7 @@ void q3()
     printf("A média aritmética entre os números 5, 8, 12 é igual a %.1f\n", media);
 }
 //4. Faça um programa que leia e imprima um número inteiro.
+
 void q4()
 {
    int num=0;
@@ -32,6 +33,7 @@ void q4()
 }
 
 //5. Faça um programa que leia dois números reais e os imprima.
+
 void q5()
 {
    float num1,num2;
@@ -98,15 +100,15 @@ void q9()
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
 
-void 10()
+void q10()
 {
    float num1,num2,num3,med;
    printf("Digite um numero: ");
    scanf("%f",&num1);
    printf("Digite um numero: ");
-   scanf("%d",&num2);
+   scanf("%f",&num2);
    printf("Digite um numero: ");
-   scanf("%d",&num3);
+   scanf("%f",&num3);
    med = (nun1+num2+num3)/3.0
    printf("A média aritmética dos números informados é:%f:", med);
 }
@@ -116,13 +118,13 @@ void 10()
 //    subtração,multiplicação e divisão. Ao final, o programa
 //    deve imprimir os resultados dos cálculos.
 
-void 11()
+void q11()
 {
    float num1,num2,som,sub,div,mult;
    printf("Digite um numero: ");
    scanf("%f",&num1);
    printf("Digite um numero: ");
-   scanf("%d",&num2);
+   scanf("%f",&num2);
 
    som=num1+num2;
    sub=num1-num2;
@@ -139,7 +141,7 @@ void 11()
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
 
-void 12()
+void q12()
 {
    float num1,res;
    printf("Digite um numero: ");
@@ -154,7 +156,7 @@ void 12()
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
 
-void 13()
+void q13()
 {
    float saldo, nvsaldo;
    printf("Informe o valor do saldo da sua conta para o cálculo: ");
@@ -170,7 +172,7 @@ void 13()
 //    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
 
 
-void 14()
+void q14()
 {
    float bs,alt,per,a;
    printf("Informe o valor (em metros) do comprimento da base para o cálculo: ");
@@ -178,13 +180,11 @@ void 14()
    
    printf("Informe o valor (em metros) da altura para o cálculo: ");
    scanf("%f",&alt);
+per=(bs * bs)+(alt * alt);
+a=bs*alt;
 
-   per=(bs * bs)+(alt * alt);
-
-   a= bs * alt;
-
-   printf("O perímetro é de :%f:", per);
-   printf("A area é de :%f:", a);
+printf("O perímetro é de :%f:", per);
+printf("A area é de :%f:", a);
 
 }
 
@@ -192,7 +192,7 @@ void 14()
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
 
-void 15()
+void q15()
 {
    float prec,desc,vdesc,nvprec;
 
@@ -216,11 +216,40 @@ void 15()
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
 
+
+void q16()
+{
+   float sal,aj,nvsal;
+
+   printf("Informe o valor do salário atual: ");
+   scanf("%f",&sal);
+   
+   printf("Digite quantos % será  reajustado o salário: ");
+   scanf("%f",&aju);
+
+  nvsal=sal+ sal*(aj/100);
+  
+   printf("O valor do novo salário será de :%f:", nvsal);
+}
+
+
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
+
+void q17()
+{
+float gc,gf;
+
+printf("Informe a temperatura em Graus centigrados: ");
+scanf("%f",&gc);
+
+gf = (9*gc+160)/5;
+
+printf (" A temperatura em Fahrenheit:%f, gf);
+}
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -235,6 +264,26 @@ void 15()
 //    Ao final, o programa deverá imprimir a distância percorrida e a
 //    quantidade de litros consumidos na viagem.
 
+void q17()
+{
+
+float qtdlt,dist,tempo,vmedia
+
+printf("Informe o tempo(em horas) de duração da viajem: );
+scanf ("%f", &tempo)
+
+printf("Informe a velocidade média do carro durante a viajem: );
+scanf ("%f", &vmedia):
+
+dist=tempo*vmedia;
+qtdlt=Dist/12;
+
+printf("A distância percorrida foi de %f:", dist)
+printf("O consumo total de combustível durante a viagen foide %2.f:", qtdlt)
+
+}
+
+
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
 //    Para isso, o programa deve ler o valor da prestação vencida, a
 //    taxa periódica de juros e o período de atraso. Ao final, o
@@ -242,9 +291,48 @@ void 15()
 //    de atraso, os juros que serão cobrados pelo período de atraso, o
 //    valor da prestação acrescido dos juros. Considere juros simples.
 
+void q19()
+{
+int p_atraso;
+float vl_venc, tx_j, j, nv_valor;
+
+printf("Digite o valor da prestacao vencida: ");
+scanf("%f", &vl_venc);
+
+printf("Informe a taxa de juros: ");
+scanf("%f", &tx_j);
+
+printf("Periodo de atraso: ");
+scanf("%d", &p_atraso);
+
+j=(v_venc * (tx_j /100) * p_atraso;
+nv_valor = v_venc +j;
+
+printf(" O valor da prestacao: %f \n", v_venc);
+printf("Periodo de atraso: %d \n", p_atraso);
+printf("Juros a ser cobrados: %f \n", j);
+printf("Valor da prestacao com juros: %.2f", nv_valor);
+}
+
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
+
+void q20()
+{
+float dólar,cotacao,real;
+
+printf("Informe a quantia  em dólares para a conversão: ");
+scanf("%f",&dolar);
+
+printf("Informe a cotação  atual do dólar: ");
+scanf("%f",&cotacao);
+
+real= dólar*cotacao;
+
+printf("O valor em reais é %2.f:", real)
+
+}
 
 int main() {
     q4();
