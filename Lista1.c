@@ -30,7 +30,7 @@ void q4()
    int num=0;
    printf("\nDigite um numero inteiro:");
    scanf("%d", &num);
-   printf("O numero digitado foi %d\n", num);
+   printf("O numero digitado foi: %d\n", num);
 }
 
 //5. Faça um programa que leia dois números reais e os imprima.
@@ -42,7 +42,7 @@ void q5()
    scanf("%f",&num1);
    printf("Informe outro numero: ");
    scanf("%f",&num2);
-   printf("Os Numeros reais informados foram: %f %f", num1, num2);
+   printf("Os Numeros reais informados foram: %1.f e %1.f", num1, num2);
 }
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
@@ -53,7 +53,7 @@ void q6()
    int num;
    printf("Digite um numero: ");
    scanf("%d",&num);
-   printf("O antecessor:%d e o sucessor %d são:", num-1,"e", num+1);
+   printf("O antecessor desse número é %d e o sucessor é %d", num-1, num+1);
 }
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
@@ -61,15 +61,14 @@ void q6()
 
 void q7()
 {
-   charnome[250],fone[15],end[200]
-   printf("Informe o seu nome completo: ");
-   scanf("%s",&nome);
-   printf("Informe o seu telefone: ");
-   scanf("%s",&fone);
-   printf("Informe o seu Endereço completo: ");
-   scanf("%s",&end);
-   printf("\nDados informados - Nome:%s, Telefone: %s, Enderenco: %s",nome,fone,
-end);
+char nome[250],fone[15],end[200];
+printf("Informe o seu nome completo: ");
+scanf("%s",nome);
+printf("Informe o seu telefone: ");
+scanf("%s",fone);
+printf("Informe o seu Endereço completo:");
+scanf("%s",end);
+printf("\nDados informados - \nNome:%s, \nTelefone: %s, \nEnderenco: %s",nome,fone,end);
 }
 
 //8. Faça um programa que leia dois números inteiros e imprima a
