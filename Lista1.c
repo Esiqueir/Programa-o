@@ -89,11 +89,11 @@ void q8()
 
 void q9()
 {
-   int num,res;
+   float num,res;
    printf("Digite um numero: ");
-   scanf("%d",&num);
-   res=num/4;
-   printf("A quarta parte desse número e:%d:", res);
+   scanf("%f",&num);
+   res = num/4;
+   printf("A quarta parte desse número e:%f", res);
 }
 
 //10. Faça um programa que leia três números reais e calcule a
@@ -109,8 +109,8 @@ void q10()
    scanf("%f",&num2);
    printf("Digite um numero: ");
    scanf("%f",&num3);
-   med = (nun1+num2+num3)/3.0
-   printf("A média aritmética dos números informados é:%f:", med);
+   med=(num1+num2+num3)/3.0;
+   printf("A média aritmética dos números informados é:%f", med);
 }
 
 //11. Faça um programa que leia dois números reais e calcule as
