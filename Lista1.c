@@ -131,10 +131,10 @@ void q11()
    div=num1/num2;
    mult=num1*num2;  
 
-   printf("\nSoma: %f", som);
-   printf("\nSubtração: %f", sub);
-   printf("\nDivisão: %f", div);
-   printf("\nMultiplicação: %f", mult);
+   printf("\nA soma é: %f", som);
+   printf("\nA subtração é: %f", sub);
+   printf("\nA divisão é: %f", div);
+   printf("\nA multiplicação é: %f", mult);
 }
 
 //12. Faça um programa que leia um número real e calcule o
@@ -147,8 +147,8 @@ void q12()
    printf("Digite um numero: ");
    scanf("%f",&num1);
    
-   res = nun1 * num1;
-   printf("O quadrado do número informado é:%f:", res);
+   res = num1 * num1;
+   printf("O quadrado do número informado é:%2.f:", res);
 }
 
 //13. Faça um programa que leia o saldo de uma conta poupança e
@@ -156,12 +156,12 @@ void q12()
 
 void q13()
 {
-   float saldo, nvsaldo;
+   float saldo=0, nvsaldo=0;
    printf("Informe o valor do saldo da sua conta para o cálculo: ");
    scanf("%f",&saldo);
 
-   nvsaldo: saldo * 1.02;
-   printf("Seu novo saldo calculado será de :%f:", nvsaldo);
+   nvsaldo=saldo*1.02;
+   printf("Seu novo saldo calculado será de :%2.f:", nvsaldo);
 }
 
 //14. Faça um programa que leia a base e a altura de um retângulo
@@ -170,18 +170,17 @@ void q13()
 
 void q14()
 {
-   float bs,alt,per,a;
-   printf("Informe o valor (em metros) do comprimento da base para o cálculo: ");
-   scanf("%f",&bs);
+   float base,alt,per,area;
+   printf("Informe o valor,em metros, do comprimento da base para o cálculo: ");
+   scanf("%f",&base);
    
-   printf("Informe o valor (em metros) da altura para o cálculo: ");
+   printf("Informe o valor,em metros, da altura para o cálculo: ");
    scanf("%f",&alt);
 
-   per=(bs * bs)+(alt * alt);
-   a=bs*alt;
-   printf("O perímetro é de :%f:", per);
-   printf("A area é de :%f:", a);
-
+   per=(base*base)+(alt*alt);
+   area=base*alt;
+   printf("O perímetro desse retângulo é:%2.f", per);
+   printf("A area dele é de:%2.f:", area);
 }
 
 //15. Faça um programa que leia o valor de um produto, o percentual
@@ -190,17 +189,17 @@ void q14()
 
 void q15()
 {
-   float prec,desc,vdesc,nvprec;
+   float preco,desc,vdesc,nvpreco;
 
-   printf("Informe o valor do produto: ");
-   scanf("%f",&prec);
-   printf("Digite o desconto a ser aplicado na compra do produto: ");
+   printf("Qual é valor do produto: ");
+   scanf("%f",&preco);
+   printf("Digite quantos porcento de desconto a ser aplicado nessa compra: ");
    scanf("%f",&desc);
 
-  vdesc=prec*(desc/100);
-  nvprec=prec-vdesc; 
-   printf("O valor do desconto é de :%f:", vdesc);
-   printf(" O valor do produto com desconto é de :%f:", nvprec);
+  vdesc=preco*(desc/100);
+  nvpreco=preco-vdesc; 
+   printf("\nO valor do desconto é de :%2.f:", vdesc);
+   printf("\nO valor do produto com desconto é de :%2.f:", nvpreco);
 
 }
 
@@ -212,15 +211,15 @@ void q15()
 
 void q16()
 {
-   float sal,aj,nvsal;
+   float salario,ajuste,nvsalario;
 
    printf("Informe o valor do salário atual: ");
-   scanf("%f",&sal);
+   scanf("%f",&salario);
    printf("Digite quantos % será  reajustado o salário: ");
-   scanf("%f",&aju);
+   scanf("%f",&ajuste);
 
-  nvsal=sal+ sal*(aj/100); 
-   printf("O valor do novo salário será de :%f:", nvsal);
+  nvsalario=salario+salario*(ajuste/100); 
+   printf("O valor do novo salário será de :%2.f:", nvsalario);
 }
 
 //17. Faça um programa que calcule a conversão entre graus centígrados
@@ -231,13 +230,14 @@ void q16()
 
 void q17()
 {
-   float gc,gf;
+   float tempc,tempf;
 
    printf("Informe a temperatura em Graus centigrados: ");
-   scanf("%f",&gc);
+   scanf("%f",&tempc);
 
-   gf = (9*gc+160)/5;
-   printf (" A temperatura em Fahrenheit:%f, gf);
+   tempf = (9*tempc+160)/5.0;
+
+   printf (" A temperatura em Fahrenheit:%2.f,tempf);
 }
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
