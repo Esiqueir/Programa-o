@@ -61,14 +61,16 @@ void q6()
 
 void q7()
 {
-char nome[250],fone[15],end[200];
-printf("Informe o seu nome completo: ");
-scanf("%s",nome);
-printf("Informe o seu telefone: ");
-scanf("%s",fone);
-printf("Informe o seu Endereço completo:");
-scanf("%s",end);
-printf("\nDados informados - \nNome:%s, \nTelefone: %s, \nEnderenco: %s",nome,fone,end);
+   char nome[250],fone[15],end[200];
+   
+   printf("Informe o seu nome completo: ");
+   scanf("%s",nome);
+   printf("Informe o seu telefone: ");
+   scanf("%s",fone);
+   printf("Informe o seu Endereço completo:");
+   scanf("%s",end);
+   
+   printf("\nDados informados - \nNome:%s, \nTelefone: %s, \nEnderenco: %s",nome,fone,end);
 }
 
 //8. Faça um programa que leia dois números inteiros e imprima a
