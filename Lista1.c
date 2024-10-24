@@ -16,6 +16,7 @@ void q2()
 {
     printf("30*27 = %d\n ", 30*27);
 }
+
 //3.Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 void q3()
 {
