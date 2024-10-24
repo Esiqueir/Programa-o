@@ -237,7 +237,7 @@ void q17()
 
    tempf = (9*tempc+160)/5.0;
 
-   printf (" A temperatura em Fahrenheit:%2.f,tempf);
+   printf (" A temperatura em Fahrenheit é %2.f",tempf);
 }
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
@@ -255,17 +255,18 @@ void q17()
 
 void q17()
 {
-   float qtdlt,dist,tempo,vmedia
+   float qtdlt,dist,tempo,vmedia;
 
-   printf("Informe o tempo(em horas) de duração da viajem: );
-   scanf ("%f", &tempo)
-   printf("Informe a velocidade média do carro durante a viajem: );
-   scanf ("%f", &vmedia):
+   printf("Informe o tempo(em horas) de duração da viajem:" );
+   scanf ("%f", &tempo);
+   printf("Informe a velocidade média do carro durante a viajem:" );
+   scanf ("%f", &vmedia);
 
    dist=tempo*vmedia;
-   qtdlt=Dist/12;
-   printf("A distância percorrida foi de %f:", dist)
-   printf("O consumo total de combustível durante a viagen foide %2.f:", qtdlt)
+   qtdlt=dist/12;
+   printf("A distância percorrida foi de %2.f:", dist);
+   printf("O consumo total de combustível durante a viagen foide %2.f:", qtdlt);
+   
 }
 
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
@@ -277,23 +278,23 @@ void q17()
 
 void q19()
 {
-   int p_atraso;
-   float vl_venc, tx_j, j, nv_valor;
+   float valorvenc,tx_juros,t_atraso, valor_juros,parc_atual;
 
    printf("Digite o valor da prestacao vencida: ");
-   scanf("%f", &vl_venc);
+   scanf("%f", &valorvenc);
    printf("Informe a taxa de juros: ");
-   scanf("%f", &tx_j);
-   printf("Periodo de atraso: ");
-   scanf("%d", &p_atraso);
+   scanf("%f", &tx_juros);
+   printf("Qual o tempo de atraso das parcelas: ");
+   scanf("%f", &t_atraso);
 
-   j=(v_venc * (tx_j /100) * p_atraso;
-   nv_valor = v_venc +j;
+   valor_juros = valorvenc * (tx_juros/100) * t_atraso;
+   parc_atual = valorvenc+valor_juros;
    
-   printf(" O valor da prestacao: %f \n", v_venc);
-   printf("Periodo de atraso: %d \n", p_atraso);
-   printf("Juros a ser cobrados: %f \n", j);
-   printf("Valor da prestacao com juros: %.2f", nv_valor);
+   printf(" O valor da prestacao: %2f \n", valorvenc);
+
+   printf("Periodo de atraso: %2f \n", t_atraso);
+   printf("Juros a ser cobrados: %2f \n", valor_juros);
+   printf("Valor da prestacao com juros: %.2f", parc_atual);
 }
 
 //20. Faça um programa que efetue a apresentação do valor da conversão
@@ -302,20 +303,19 @@ void q19()
 
 void q20()
 {
-   float dólar,cotacao,real;
+   float dolar,cotacao,real;
 
    printf("Informe a quantia  em dólares para a conversão: ");
    scanf("%f",&dolar);
-   printf("Informe a cotação  atual do dólar: ");
+   printf("Informe a cotação  atual do dolar: ");
    scanf("%f",&cotacao);
 
-   real= dólar*cotacao;
+   real= dolar*cotacao;
 
-   printf("O valor em reais é %2.f:", real)
-
+   printf("O valor em reais é :%2.f", real);
 }
 
 int main() {
-    q5();
+    q1();
     return EXIT_SUCCESS;
 }
