@@ -122,21 +122,16 @@ void q10()
 
 void q11()
 {
-   float num1,num2,som,sub,div,mult;
+   float num1,num2,som,sub,dv,mult;
    printf("Digite um numero: ");
    scanf("%f",&num1);
    printf("Digite um numero: ");
    scanf("%f",&num2);
 
-   som=num1+num2;
-   sub=num1-num2;
-   div=num1/num2;
-   mult=num1*num2;  
-
-   printf("\nO resultado da soma é: %f", som);
-   printf("\nO resultado da subtração é: %f", sub);
-   printf("\nO resultado da divisão é: %f", div);
-   printf("\nO resultado da multiplicação é: %f", mult);
+   printf("\nO resultado da soma é: %2.f", som=num1+num2);
+   printf("\nO resultado da subtração é: %2.f", sub=num1-num2);
+   printf("\nO resultado da divisão é: %f",dv=num1/num2);
+   printf("\nO resultado da multiplicação é: %2.f", mult=num1*num2);
 }
 
 //12. Faça um programa que leia um número real e calcule o
@@ -150,6 +145,7 @@ void q12()
    scanf("%f",&num1);
    
    res = num1 * num1;
+
    printf("O quadrado do número informado é:%2.f:", res);
 }
 
