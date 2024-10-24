@@ -21,7 +21,7 @@ void q2()
 void q3()
 {
     float media = (5+8+12)/3.0;
-    printf("A média aritmética entre os números 5, 8, 12 é igual a %.1f\n", media);
+    printf("A média aritmética entre os números 5, 8, 12 é igual a %.2f\n", media);
 }
 
 //4. Faça um programa que leia e imprima um número inteiro.
@@ -43,7 +43,7 @@ void q5()
    scanf("%f",&num1);
    printf("Informe outro numero: ");
    scanf("%f",&num2);
-   printf("Os Numeros reais informados foram: %1.f e %1.f", num1, num2);
+   printf("Os Numeros reais informados foram: %.2f e %.2f", num1, num2);
 }
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
@@ -96,7 +96,7 @@ void q9()
    printf("Digite um numero: ");
    scanf("%f",&num);
    res = num/4;
-   printf("A quarta parte desse número e:%f", res);
+   printf("A quarta parte desse número e:%.2f", res);
 }
 
 //10. Faça um programa que leia três números reais e calcule a
@@ -113,7 +113,7 @@ void q10()
    printf("Digite um numero: ");
    scanf("%f",&num3);
    media=(num1+num2+num3)/3.0;
-   printf("A média aritmética dos números informados é:%f", media);
+   printf("A média aritmética dos números informados é:%.2f", media);
 }
 
 //11. Faça um programa que leia dois números reais e calcule as
@@ -129,10 +129,10 @@ void q11()
    printf("Digite um numero: ");
    scanf("%f",&num2);
 
-   printf("\nO resultado da soma é: %2.f", som=num1+num2);
-   printf("\nO resultado da subtração é: %2.f", sub=num1-num2);
-   printf("\nO resultado da divisão é: %f",dv=num1/num2);
-   printf("\nO resultado da multiplicação é: %2.f", mult=num1*num2);
+   printf("\nO resultado da soma é: %.2f", som=num1+num2);
+   printf("\nO resultado da subtração é: %.2f", sub=num1-num2);
+   printf("\nO resultado da divisão é: %.2f",dv=num1/num2);
+   printf("\nO resultado da multiplicação é: %.2f", mult=num1*num2);
 }
 
 //12. Faça um programa que leia um número real e calcule o
@@ -147,7 +147,7 @@ void q12()
    
    res = num1 * num1;
 
-   printf("O quadrado do número informado é:%2.f:", res);
+   printf("O quadrado do número informado é:%.2f:", res);
 }
 
 //13. Faça um programa que leia o saldo de uma conta poupança e
@@ -160,7 +160,7 @@ void q13()
    scanf("%f",&saldo);
 
    nvsaldo=saldo*1.02;
-   printf("Seu novo saldo calculado será de :%2.f:", nvsaldo);
+   printf("Seu novo saldo calculado será de :%.2f:", nvsaldo);
 }
 
 //14. Faça um programa que leia a base e a altura de um retângulo
@@ -178,8 +178,8 @@ void q14()
 
    per=(base*base)+(alt*alt);
    area=base*alt;
-   printf("O perímetro desse retângulo é:%2.f", per);
-   printf("A area dele é de:%2.f:", area);
+   printf("O perímetro desse retângulo é:%.2f", per);
+   printf("A area dele é de:%.2f:", area);
 }
 
 //15. Faça um programa que leia o valor de um produto, o percentual
@@ -197,16 +197,14 @@ void q15()
 
   vdesc=preco*(desc/100);
   nvpreco=preco-vdesc; 
-   printf("\nO valor do desconto é de :%2.f:", vdesc);
-   printf("\nO valor do produto com desconto é de :%2.f:", nvpreco);
-
+   printf("\nO valor do desconto é de :%.2f:", vdesc);
+   printf("\nO valor do produto com desconto é de :%.2f:", nvpreco);
 }
 
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
-
 
 void q16()
 {
@@ -218,7 +216,7 @@ void q16()
    scanf("%f",&ajuste);
 
   nvsalario=salario+salario*(ajuste/100); 
-   printf("O valor do novo salário será de :%2.f:", nvsalario);
+   printf("O valor do novo salário será de :%.2f:", nvsalario);
 }
 
 //17. Faça um programa que calcule a conversão entre graus centígrados
@@ -236,7 +234,7 @@ void q17()
 
    tempf = (9*tempc+160)/5.0;
 
-   printf (" A temperatura em Fahrenheit é %2.f",tempf);
+   printf (" A temperatura em Fahrenheit é %.2f",tempf);
 }
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
@@ -263,8 +261,8 @@ void q17()
 
    dist=tempo*vmedia;
    qtdlt=dist/12;
-   printf("A distância percorrida foi de %2.f:", dist);
-   printf("O consumo total de combustível durante a viagen foide %2.f:", qtdlt);
+   printf("A distância percorrida foi de %.2f:", dist);
+   printf("O consumo total de combustível durante a viagen foide %.2f:", qtdlt);
    
 }
 
@@ -289,10 +287,9 @@ void q19()
    valor_juros = valorvenc * (tx_juros/100) * t_atraso;
    parc_atual = valorvenc+valor_juros;
    
-   printf(" O valor da prestacao: %2f \n", valorvenc);
-
-   printf("Periodo de atraso: %2f \n", t_atraso);
-   printf("Juros a ser cobrados: %2f \n", valor_juros);
+   printf(" O valor da prestacao: %.2f \n", valorvenc);
+   printf("Periodo de atraso: %.2f \n", t_atraso);
+   printf("Juros a ser cobrados: %.2f \n", valor_juros);
    printf("Valor da prestacao com juros: %.2f", parc_atual);
 }
 
@@ -311,7 +308,7 @@ void q20()
 
    real= dolar*cotacao;
 
-   printf("O valor em reais é :%2.f", real);
+   printf("O valor em reais é :%.2f", real);
 }
 
 int main() {
