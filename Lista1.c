@@ -133,10 +133,10 @@ void q11()
    div=num1/num2;
    mult=num1*num2;  
 
-   printf("\nA soma é: %f", som);
-   printf("\nA subtração é: %f", sub);
-   printf("\nA divisão é: %f", div);
-   printf("\nA multiplicação é: %f", mult);
+   printf("\nO resultado da soma é: %f", som);
+   printf("\nO resultado da subtração é: %f", sub);
+   printf("\nO resultado da divisão é: %f", div);
+   printf("\nO resultado da multiplicação é: %f", mult);
 }
 
 //12. Faça um programa que leia um número real e calcule o
