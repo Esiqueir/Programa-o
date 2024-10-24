@@ -104,15 +104,15 @@ void q9()
 
 void q10()
 {
-   float num1,num2,num3,med;
+   float num1,num2,num3,media;
    printf("Digite um numero: ");
    scanf("%f",&num1);
    printf("Digite um numero: ");
    scanf("%f",&num2);
    printf("Digite um numero: ");
    scanf("%f",&num3);
-   med=(num1+num2+num3)/3.0;
-   printf("A média aritmética dos números informados é:%f", med);
+   media=(num1+num2+num3)/3.0;
+   printf("A média aritmética dos números informados é:%f", media);
 }
 
 //11. Faça um programa que leia dois números reais e calcule as
