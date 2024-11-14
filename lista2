@@ -147,12 +147,45 @@ void questao07()
 
 void questao08()
 {
+    int num;
+    printf("Digite um numero:");
+    scanf ("%d",&num);
+
+    if(num>20)
+    {
+        printf("O número %d é maior do que 20", num);
+    }
+    else if(num<20)
+    {
+        printf("O número %d é menor do que 20", num);
+    }
+    else
+    {
+        printf("O número %d é igual do que 20", num);
+    }
 }
 //9. Faça um programa que permita entrar com o ano de nascimento da pessoa e como ano
 //atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o
 //ano de nascimento informado é válido.
 void questao09()
 {
+
+    int idade ano_n,ano_a;
+    printf("Informe o ano do seu nascimento:\n");
+    scanf ("%d",&ano_n);
+    printf("Informe o ano atual:");
+    scanf("%d",&ano_a);
+
+    idade=ano_a - ano_n;
+
+    if (ano_n>1800 && ano_n<=ano_a)
+    {
+    printf("Sua idade é %d", idade);
+    }
+    else
+    {
+    printf("Data informada Incorreta");
+    }
 }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
@@ -160,6 +193,10 @@ void questao09()
 
 void questao10()
 {
+int n1,n2,n3;
+
+printf("Digite três números:\n");
+scanf("%d %d %d", n1,n2,n3);
 }
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 
